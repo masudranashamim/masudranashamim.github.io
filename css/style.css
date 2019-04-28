@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body {
+    background: #ddd;
+}
+
+#header {
+    height: 60px;
+    background: #fff;
+}
+
+#header img {
+    width: 200px;
+    height: 40px;
+    padding: 5px 10px;
+    margin: 5px 10px;
+}
+
+#header li {
+    list-style: none;
+    color: 555;
+    text-align: justify;
+}
+
+#header li a:hover {
+    color: #555;
+    text-decoration: none;
+}
+
+#header ul {
+    margin: 0;
+    padding: 0;
+}
+
+#header ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 30px;
+    background: blue;
+    opacity: .8;
+   
+}
+
+#header ul li a {
+     color: #fff;
+    text-decoration: none;
+    
+
+}
+
+#header ul li a:hover{
+    color: black;
+    background: #fff;
+}
+
+#header ul li:hover {
+    color: darkgreen;
+    background: #fff;
+    
+}
+
+/*header Close*/
+
+#slider {
+    overflow: hidden;
+}
+
+#slider figure img {
+    width: 20%;
+    height: 350px;
+    float: left;
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    30% {
+        left: -100%;
+    }
+
+    35% {
+        left: -150%;
+    }
+
+    45% {
+        left: -150%;
+    }
+
+    55% {
+        left: -200%;
+    }
+
+    65% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    85% {
+        left: -300%;
+    }
+
+    95% {
+        left: -350%;
+    }
+}
+
+/*slider close*/
+
+#post .col-lg-4 {
+    background: #fff;;
+    overflow: hidden;
+    border: 1px solid #000;
+    padding: 5px 5px;
+}
+
+#post .col-lg-4 h2 {
+    background: blue;
+    color: #fff;
+    text-align: center;
+    padding: 0px 5px;
+}
+#post h6{
+    color: #555;
+    background: #fff;
+    text-align: justify;
+}
+
+
+#readmore {
+    float: right;
+    padding: 5px 10px;
+}
+/*Resposible*/
+@media (min-width:576px) and (max-width:767px){
+    #header img{
+        width: 50%;
+        margin: 10px 150px;
+    }
+    #header .col-lg-6 ul{
+        width: 100%;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    #header .col-lg-3 li{
+        margin: 0px 170px;
+    }
+    #slider figure img{
+        width: 20%;
+        height: 100px;
+        margin-top: 120px;
+    }
+}
